@@ -1,0 +1,247 @@
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    width: 245px;
+    height: 130px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@font-face {
+    font-family: "MaiandraGD";
+    src: url(/project/music_website/font/MAIAN.TTF);
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+.main {
+    background-size: 100%;
+    background-image: url(/project/music_website/images/about_me_page_images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;/*To avoid stretching of image*/
+    width:100%;
+} 
+
+
+.innerContainer {
+    background-size: 100% 100%;
+    background-image: url(/project/music_website/images/about_me_page_images/Layer.png);
+    background-repeat: no-repeat;
+    width: 75%;
+    min-height: 1114px;
+    margin: 0 auto;
+}
+
+
+.speaker_img {
+    position: absolute;
+    background-image: url(/project/music_website/images/about_me_page_images/Untitled-1.jpg);
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 19px;
+    height: 150px;
+    width: 240px;
+}
+
+
+.music_logo {
+    position: absolute;
+    background-image: url(/project/music_website/images/about_me_page_images/Music-logo.png);
+    background-repeat: no-repeat;
+    background-size: 337px;
+    margin-top: 50px;
+    margin-left: 392px;
+    height: 100px;
+    width: 331px;
+
+}
+
+
+.search_box {                                          /*search box div */
+    background-color: rgb(216, 213, 213);
+    background-image: url(/project/music_website/images/about_me_page_images/search_icon.png);
+    background-position-x: 5px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    position: absolute;
+    margin:0 auto;
+    margin-top: 8px;
+    margin-left: 940px;
+    height: 25px;
+    width:200px;  
+    
+}
+
+
+#search_box {     /* search text box*/
+    border: 1px solid rgb(216, 213, 213);
+    margin-top: 1px;
+    margin-left: 28px;
+    height:21px;
+    width: 171px;
+}
+
+
+.navigation_bar {
+    margin-top: 159px; 
+}
+
+/* Navigation bar style*/
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);  
+    overflow: hidden;
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+} 
+li {
+    float: left;
+    border-right:1px solid #bbb; 
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 12px 79px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+.active {
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+}
+
+
+.text {
+    width:750px;
+    height: 500px;
+    color: whitesmoke;
+}
+.li {
+    clear: both;
+}
+
+
+h2 {
+    font-family: MaiandraGD;
+    font-size: 36px;/* Approximation due to font substitution */   
+    font-weight: 400;
+    line-height: 28px;/* Approximation due to font substitution*/
+}
+
+
+.paragraph {
+    font-family: MaiandraGD;
+    color:  #ffffff;
+    font-size: 50px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 22px;/* Approximation due to font substitution */
+    font-size: 18px;
+
+}
+
+
+
+.guitar_img {
+    background-image: url(/project/music_website/images/about_me_page_images/guitar.png);
+    height: 374px;
+    width: 188px;
+    margin-left: auto;
+    margin-bottom: 240px;
+    margin-top: -480px;
+}
+
+
+.line {
+    width: 100%;
+    margin-top: 90px;
+    padding-bottom: 2px;
+    text-align: center;
+    background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
+    background-size: 100% 5px;
+}
+
+
+.footer {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 31px;
+    padding-top: 22px;
+ }
+
+
+.link {
+    width: 287px;
+    margin-left: auto;
+}
+
+
+.btm_lnk {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:rgb(121,195,206);
+}
+
+
+
+.speaker_logo {
+width: 399px;
+height: 50px;
+
+background-repeat: no-repeat;
+margin: 0 auto;
+margin-top: 63px;
+}
+
+
+small{
+    color: white;
+}
+
+
+.bottom_div {
+    width: 391px;
+    height: 48px;
+    box-shadow: 0px 1px white;
+    margin:0 auto;  
+}
+
+
+.botmLogo {
+    min-height: 45px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.botmLogo img {
+    position: relative;
+    bottom: -20px;
+}
+
+
+.botmLogo:hover img {
+    bottom: 0;
+    transition-duration: 0.5s;
+}
+

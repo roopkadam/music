@@ -1,0 +1,120 @@
+body {
+    background-size: 100%;/*To avoid stretching of image*/
+    background-repeat: no-repeat;
+    background-image: url('/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/background.png');
+    min-height: 145%;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+   
+}
+
+
+.inerContainer {
+    background-image: url("/home/trainee6/Downloads/about_me_page_images/texture.png");
+    width: 72%;
+}
+
+.speaker_img{
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Untitled-1.jpg");
+    background-size: 100%;
+    height: 150px;
+    margin-top: 19px;
+    margin-left: 207px;
+    position: absolute;
+    width: 240px;
+}
+
+.music_logo {
+  
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Music-logo.png");
+    background-repeat: no-repeat;
+    background-size: 337px;
+    height: 100px;
+    margin-left: 523px;
+    margin-top: 50px;
+    position: absolute;
+    text-align: center;
+    width: 331px;
+}
+
+.search_box{                                          /*search box div */
+    background-color: #e2e2e2;
+     background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/search_icon.png");
+     background-position-x: 5px;
+     background-position-y: 10px;
+     background-repeat: no-repeat;
+     border-radius: 3px;  
+     border-width: 1px; 
+     border-style: solid;  
+     width: 187px;
+     height: 20px;  
+     position: absolute;
+     margin:0 auto;
+     margin-top: 13px;
+     margin-left:1076px;
+     height: 25px;
+     width:200px; 
+ }
+
+ #search_box {     /* search text box*/
+    border: 1px solid rgb(216, 213, 213);
+    height: 22px;
+    margin-top: 1px;
+    margin-left: 21px;
+    width: 178px
+}
+
+.navigation_bar {
+    margin-top: 159px;
+}
+
+
+/* first Navigation bar style*/
+.firNav {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    margin-left: 207px;
+    width: 100%;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);  
+    overflow: hidden;
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background-color: #4CAF50;
+}
+.firNav li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+.firNav li:last-child {
+    border-right: none;
+}
+.firNav li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 11px 75px;
+    text-decoration: none;
+}
+.firNav li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+.active {
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+}
+
+.text{
+    width:750px;
+    height: 500px;
+    color: whitesmoke;
+    
+}
+
+
+
+
+
+

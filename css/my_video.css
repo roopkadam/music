@@ -1,0 +1,125 @@
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    width: 245px;
+    height: 130px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+.main{
+    position: relative;
+    background-size: 100%;/*To avoid stretching of image*/
+    background-image: url('/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/background.png');
+    margin:0 auto;
+    height: 770px;
+    width:800px;
+    overflow: hidden;
+}
+.container{
+    height: 800px;
+    width: 750px;
+    /*background-color: plum;*/
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.speaker_img{
+    position: absolute;
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Untitled-1.jpg");
+    background-size: 100%;
+    margin-top: 10px;
+    height: 115px;
+    width: 180px;
+}
+
+.music_logo{
+    position: absolute;
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Music-logo.png");
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin-left: 250px;
+    margin-top: 50px;
+    height: 75px;
+    width: 245px;
+   }
+   .search_box{                                          /*search box div */
+   background-color: rgb(216, 213, 213);
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/search_icon.png");
+    background-position-x: 5px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    position: absolute;
+    margin:0 auto;
+    margin-top: 8px;
+    margin-left:500px;
+    height: 25px;
+    width:200px;
+    
+}
+#search_box{     /* search text box*/
+    border: 1px solid rgb(216, 213, 213);
+    margin-top: 1px;
+    margin-left: 28px;
+    height:21px;
+    width: 171px;
+}
+.navigation_bar{
+    margin-top: 120px;
+}
+
+/* Navigation bar style*/
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width:694;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);  
+    overflow: hidden;
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background-color: #4CAF50;
+}
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 6px 30px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+.active {
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+}
+
+.text{
+    width:750px;
+    height: 500px;
+    color: whitesmoke;
+    
+}
+
+

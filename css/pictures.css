@@ -1,0 +1,302 @@
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    width: 245px;
+    height: 130px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+/*body{
+    background-size: contain;
+ width:100%;
+ background-color: black;
+  
+}
+*/
+.main{
+    position: relative;
+    background-size: 100%;/*To avoid stretching of image*/
+    background-image: url('/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/background.png');
+    margin:0 auto;
+    height: 1302px;
+    width:100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.container{
+    height: 1301px;
+    width: 1130px;
+    margin:0 auto;
+    margin-left: 212px;
+    margin-right: 50px;
+    text-align: center;
+  /* background-color: tomato;*/
+ /* border: 1px solid blue;*/
+
+}
+
+.speaker_img{
+    position: absolute;
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Untitled-1.jpg");
+    background-size: 100%;
+    margin-top: 19px;
+    margin-left: 7px;
+    height: 150px;
+    width: 240px;
+}
+
+.music_logo{
+    position: absolute;
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Music-logo.png");
+    background-repeat: no-repeat;
+    background-size: 337px;
+    margin-left: 325px;
+    margin-top: 50px;
+    height: 100px;
+    width: 331px;
+   }
+   .search_box{                                          /*search box div */
+   background-color: #e2e2e2;
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/search_icon.png");
+    background-position-x: 5px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-radius: 3px;  
+    border-width: 1px; 
+    border-style: solid;  
+    width: 187px;
+    height: 20px;  
+    position: absolute;
+    margin:0 auto;
+    margin-top: 8px;
+    margin-left:893px;
+    height: 25px;
+    width:200px;
+    
+}
+#search_box{     /* search text box*/
+    border: 1px solid rgb(216, 213, 213);
+    margin-top: 1px;
+    margin-left: 28px;
+    height:21px;
+    width: 171px;
+}
+.navigation_bar{
+    margin-top: 188px;
+}
+
+
+/* first Navigation bar style*/
+.firNav {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    margin-left: 7px;
+    width:1082px;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);  
+    overflow: hidden;
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background-color: #4CAF50;
+}
+.firNav li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+.firNav li:last-child {
+    border-right: none;
+}
+.firNav li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 11px 74px;
+    text-decoration: none;
+}
+.firNav li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+.active {
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+}
+
+.text{
+    width:750px;
+    height: 500px;
+    color: whitesmoke;
+    
+}
+/*Second navigation box*/
+.secNav{
+
+    list-style-type: none;
+    margin:0;
+    margin-left: 901px;
+    padding: 0;
+    width:188px;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);  
+    overflow: hidden;
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background-color: #4CAF50;
+    
+}
+.secNav li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+.secNav li:last-child {
+    border-right: none;
+}
+.secNav li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 3px 25px;
+    text-decoration: none;
+}
+.secNav li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+.active {
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+}
+
+.text{
+    width:750px;
+    height: 500px;
+    color: whitesmoke;
+    
+}
+/* Instrumentalimages*/
+
+.instImage1{
+margin-top: 20px;
+margin-left: 2px;
+   
+}
+.singImg1{
+    width: 204px;
+    height: 95px;
+    margin-left: -10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-size: 100% 100%;
+    border: 1px solid white;
+}
+
+.instImage2{
+    margin-top: 20px;
+    margin-left: 2px;
+       
+    }
+    .singImg2{
+        width: 204px;
+        height: 95px;
+        margin-left: -10px;
+        margin-right: 20px;
+        margin-top: 20px;
+        background-size: 100% 100%;
+        border: 1px solid white;
+    }
+    
+    .instImage3{
+        margin-top: 20px;
+        margin-left: 2px;
+           
+        }
+        .singImg3{
+            width: 204px;
+            height: 95px;
+            margin-left: -10px;
+            margin-right: 20px;
+            margin-top: 20px;
+            background-size: 100% 100%;
+            border: 1px solid white;
+        }
+        
+    
+    /*Fotter part*/
+    .line{
+        margin-top: 445px;
+        padding-bottom: 2px;
+        text-align: center;
+        background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
+        background-size: 100% 5px;
+    }
+    
+    .footer {
+        position:absolute;
+        bottom:0;
+        width:750px;
+        height:101px;   /* Height of the footer */
+      
+        margin-top: -1px;
+     }
+    .link{
+    
+        width: 290px;
+        margin-left: 774px;
+        margin-top: -80px;
+        
+    }
+    .btm_lnk{
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color:rgb(121,195,206);
+    }
+    small{
+        color:rgb(121,195,206);
+        font-size: 17px;
+    }
+    .speaker_logo{
+    width: 70px;
+    height: 50px;
+    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Untitled-4.png");
+    background-repeat: no-repeat;
+    margin-left: 258px;
+    margin-top: -24px;
+    }
+    .copyWrite{
+        color: white;
+        margin-left: 230px;
+        margin-top: 20px;
+    }
+    .bottom_div{
+        width: 365px;
+        height: 48px;
+        box-shadow: 0px 1px white;
+        margin-top: -10px;
+        margin-left: 55px;
+        padding-left:25px;
+    }
+    .botmLogo{
+        min-height: 45px;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .botmLogo img{
+        position: relative;
+        bottom: -20px;
+    }
+    .botmLogo:hover img{
+        bottom: 0;
+        transition-duration: 0.5s;
+    }
+    
+    
