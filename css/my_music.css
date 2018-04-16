@@ -21,7 +21,7 @@
 .main{
     position: relative;
     background-size: 100%;/*To avoid stretching of image*/
-    background-image: url('/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/background.png');
+    background-image: url(/project/music_website/images/about_me_page_images/bg1.jpg);
     margin:0 auto;
     height: 770px;
     width:800px;
@@ -38,7 +38,7 @@
 
 .speaker_img{
     position: absolute;
-    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Untitled-1.jpg");
+    background-image: url(/project/music_website/images/about_me_page_images/Untitled-1.jpg);
     background-size: 100%;
     margin-top: 10px;
     height: 115px;

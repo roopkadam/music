@@ -48,25 +48,21 @@ body{
     background-image: url(/project/music_website/images/about_me_page_images/Untitled-1.jpg);
     background-size: 100% 100%;
     margin-top: 10px;
-    margin-left: 19px;
+    margin-left: 0px;
     height: 150px;
     width: 240px;
 }
 
-
 .music_logo {
-    position: absolute;
     background-image: url(/project/music_website/images/about_me_page_images/Music-logo.png);
     background-repeat: no-repeat;
     background-size: 337px;
-    margin-top: 50px;
-    margin-left: 392px;
     height: 100px;
+    margin-left: 387px;
+    margin-top: 50px;
+    position: absolute;
     width: 331px;
-
 }
-
-
 .search_box {                                          /*search box div */
     background-color: rgb(216, 213, 213);
     background-image: url(/project/music_website/images/about_me_page_images/search_icon.png);
@@ -207,7 +203,6 @@ h2 {
 .speaker_logo {
 width: 399px;
 height: 50px;
-
 background-repeat: no-repeat;
 margin: 0 auto;
 margin-top: 63px;

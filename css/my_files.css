@@ -1,102 +1,127 @@
-body {
-    background-size: 100%;/*To avoid stretching of image*/
-    background-repeat: no-repeat;
-    background-image: url('/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/background.png');
-    min-height: 145%;
-    margin: 0 auto;
-    overflow: visible;
-    position: relative;
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    width: 245px;
+    height: 130px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@font-face {
+    font-family: "MaiandraGD";
+    src: url(/project/music_website/font/MAIAN.TTF);
+}
+body{
     width: 100%;
-   
+    margin: 0;
 }
-
-
-.inerContainer {
-    background-image: url("/home/trainee6/Downloads/about_me_page_images/texture.png");
-    width: 72%;
-}
-
-.speaker_img{
-    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Untitled-1.jpg");
+.main {
     background-size: 100%;
-    height: 150px;
-    margin-top: 19px;
-    margin-left: 207px;
+    background-image: url(/project/music_website/images/about_me_page_images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;/*To avoid stretching of image*/
+    width:100%;
+} 
+
+
+.innerContainer {
+    background-size: 100% 100%;
+    background-image: url(/project/music_website/images/about_me_page_images/Layer.png);
+    background-repeat: no-repeat;
+    width: 75%;
+    min-height: 1114px;
+    margin: 0 auto;
+
+    border: 1px solid red;
+}
+
+
+.speaker_img {
     position: absolute;
+    background-image: url(/project/music_website/images/about_me_page_images/Untitled-1.jpg);
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 150px;
     width: 240px;
 }
 
 .music_logo {
-  
-    background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/Music-logo.png");
+    background-image: url(/project/music_website/images/about_me_page_images/Music-logo.png);
     background-repeat: no-repeat;
     background-size: 337px;
     height: 100px;
-    margin-left: 523px;
+    margin-left: 387px;
     margin-top: 50px;
     position: absolute;
-    text-align: center;
     width: 331px;
 }
-
-.search_box{                                          /*search box div */
-    background-color: #e2e2e2;
-     background-image: url("/home/trainee6/Downloads/My Music 2_Assets/about_me_page_images/search_icon.png");
-     background-position-x: 5px;
-     background-position-y: 10px;
-     background-repeat: no-repeat;
-     border-radius: 3px;  
-     border-width: 1px; 
-     border-style: solid;  
-     width: 187px;
-     height: 20px;  
-     position: absolute;
-     margin:0 auto;
-     margin-top: 13px;
-     margin-left:1076px;
-     height: 25px;
-     width:200px; 
- }
-
- #search_box {     /* search text box*/
-    border: 1px solid rgb(216, 213, 213);
-    height: 22px;
-    margin-top: 1px;
-    margin-left: 21px;
-    width: 178px
+.search_box {                                          /*search box div */
+    background-color: rgb(216, 213, 213);
+    background-image: url(/project/music_website/images/about_me_page_images/search_icon.png);
+    background-position-x: 5px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    position: absolute;
+    margin:0 auto;
+    margin-top: 8px;
+    margin-left: 940px;
+    height: 25px;
+    width:200px;  
+    
 }
+
+
+#search_box {     /* search text box*/
+    border: 1px solid rgb(216, 213, 213);
+    margin-top: 1px;
+    margin-left: 28px;
+    height:21px;
+    width: 171px;
+}
+
 
 .navigation_bar {
-    margin-top: 159px;
+    margin-top: 159px; 
 }
 
-
-/* first Navigation bar style*/
+/* Navigation bar style*/
 .firNav {
     list-style-type: none;
     margin:0;
     padding: 0;
-    margin-left: 207px;
-    width: 100%;
+    width: 97.5%;
+    font-size: 16px;
+    margin-left: 15px;
     box-shadow: 3px 3px 3px rgb(233, 233, 233);  
     overflow: hidden;
     border:1px solid rgb(233, 233, 233);
     border-radius: 1px;
-    background-color: #4CAF50;
-}
+    background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+} 
 .firNav li {
     float: left;
-    border-right:1px solid #bbb;
+    border-right:1px solid #bbb; 
 }
 .firNav li:last-child {
     border-right: none;
 }
-.firNav li a {
+.firNav li  a{
     display: block;
     color: white;
     font-family: sans-serif;
     text-align: center;
-    padding: 11px 75px;
+    padding: 12px 79px;
     text-decoration: none;
 }
 .firNav li a:hover:not(.active) {
@@ -106,15 +131,142 @@ body {
     background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
 }
 
-.text{
+
+.text {
     width:750px;
     height: 500px;
     color: whitesmoke;
-    
+}
+.li {
+    clear: both;
+}
+
+
+h2 {
+    font-family: MaiandraGD;
+    font-size: 36px;/* Approximation due to font substitution */   
+    font-weight: 400;
+    line-height: 28px;/* Approximation due to font substitution*/
 }
 
 
 
 
+/************ ACCORDIAN ********/
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: -16px;
+    margin-top: 116px;
+}
 
+
+.panel {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    background: linear-gradient(0deg, #69a643 0%, #99c03b 100%);
+    box-shadow: 4px 4px 4px  rgb(233, 233, 233);
+
+}
+
+.panel-default>.panel-heading:hover{
+    background: linear-gradient(0deg, #0c4c5a 0%, #47bbec 100%);
+    font-weight: bold;
+}
+
+.panel-title > a{
+    text-decoration: none;
+}
+
+
+
+/************FOOTER  ***********/
+.line {
+    width: 100%;
+    margin-top: 90px;
+    padding-bottom: 2px;
+    text-align: center;
+    background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
+    background-size: 100% 5px;
+}
+
+
+.footer {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 31px;
+    padding-top: 22px;
+    
+ }
+
+
+.link {
+    width: 287px;
+    margin-left: auto;
+}
+
+
+.btm_lnk {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:rgb(121,195,206);
+}
+
+
+
+.speaker_logo {
+width: 399px;
+height: 50px;
+background-repeat: no-repeat;
+margin: 0 auto;
+margin-top: 63px;
+}
+
+
+small{
+    color: white;
+}
+
+
+.bottom_div {
+    width: 391px;
+    height: 48px;
+    box-shadow: 0px 1px white;
+    margin:0 auto;  
+}
+
+
+.botmLogo {
+    min-height: 45px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.botmLogo img {
+    position: relative;
+    bottom: -20px;
+}
+
+
+.botmLogo:hover img {
+    bottom: 0;
+    transition-duration: 0.5s;
+}
 
