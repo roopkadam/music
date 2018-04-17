@@ -28,7 +28,6 @@ body{
     background-size: 100%;
     background-image: url(/project/music_website/images/about_me_page_images/bg1.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;/*To avoid stretching of image*/
     width:100%;
 } 
 
@@ -106,23 +105,31 @@ ul {
     background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
 } 
 li {
+    width: 19.93%;
     float: left;
-    border-right:1px solid #bbb; 
+    border-right: 1px solid #bbb
 }
 li:last-child {
     border-right: none;
 }
+
+
 li a {
     display: block;
     color: white;
     font-family: sans-serif;
+    font-size: 16px;
     text-align: center;
-    padding: 12px 79px;
+    padding: 15px 17px;
     text-decoration: none;
 }
+
+
 li a:hover:not(.active) {
     background-color: #4CAF50;
 }
+
+
 .active {
     background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
 }
