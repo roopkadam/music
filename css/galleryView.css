@@ -1,4 +1,3 @@
-
 /* Create three unequal columns that floats next to each other */
 .column {
     float: left;
@@ -37,7 +36,7 @@ body{
     background-image: url(/project/music_website/images/about_me_page_images/Layer.png);
     background-repeat: no-repeat;
     width: 75%;
-    min-height: 1192px;
+    min-height: 1114px;
     margin: 0 auto;
 }
 
@@ -92,6 +91,7 @@ body{
     margin-top: 159px; 
 }
 
+
 /* Navigation bar style*/
 .firNav {
     list-style-type: none;
@@ -103,9 +103,11 @@ body{
     border:1px solid rgb(233, 233, 233);
     border-radius: 1px;
     background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
-} 
+}
+
+
 .firNav li {
-    width: 19.99%;
+    width: 19.93%;
     float: left;
     border-right: 1px solid #bbb
 }
@@ -120,16 +122,15 @@ body{
     font-family: sans-serif;
     font-size: 16px;
     text-align: center;
-    padding: 13px 17px;
+    padding: 15px 17px;
     text-decoration: none;
 }
+
 
 
 .firNav li a:hover:not(.active) {
     background-color: #4CAF50;
 }
-
-
 .active {
     background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
 }
@@ -140,178 +141,86 @@ body{
     height: 500px;
     color: whitesmoke;
 }
-.li{
+.li {
     clear: both;
 }
-
-/************ ACCORDIAN ********/
-.container {
-    
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: -16px;
-    margin-top: 30px;
+/*Second navigation box*/
+.secNav{
+    list-style-type: none;
+    margin: 0;
+    margin-left: 952px;
+    padding: 0;
+    margin-top: 16px;
+    width: 188px;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);
+    overflow: hidden;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
 }
 
-.panel-group .panel {
-    margin-bottom: 0;
-    border-radius: 4px;
-    border: 1px solid #ffffff;
-    box-shadow: 3px 3px 3px 1px;
-}
 
-.panel {
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-    margin-bottom: 20px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-}
-
-.panel-default>.panel-heading {
-    color: #333;
-    background-color: #f5f5f5;
-    border-color: #ddd;
-    background: linear-gradient(0deg, #69a643 0%, #99c03b 100%);
-    box-shadow: 4px 4px 4px  rgb(233, 233, 233);
-
-}
-
-.panel-default>.panel-heading:hover{
-    background: linear-gradient(0deg, #0c4c5a 0%, #47bbec 100%);
-    font-weight: bold;
-}
-
-.panel-body {
-     padding: 0px;
-     position: relative;
-}
-
-.panel-title > a{
-    text-decoration: none;
-}
-/* document folder image*/
-.docImage img {
+.secNav li {
     float: left;
-    border-radius: 9px;
-    margin-left: 21px;
-    margin-top: 7px;
-}
-/* content in div*/
-.docContent{
-    padding-left: 2px;
-}
-/* add icon */
-.addImg img {
-    float: left;
-    border-radius: 10px;
-    margin-left: 86px;
-    margin-top: 10px;
+    width: 49.4%;
+    border-right: 1px solid #bbb;
 }
 
 
-.addImg {
-    padding-bottom: 15px;
-    width: 100%;
-    margin-left: 0px;
-    border-bottom: 1px solid #ffffff;
+.secNav li:last-child {
+    border-right: none;
 }
 
-.docImage {
-    width: 85%;
-    position: relative;
-    margin-left: 0px;
-    margin-top: 10px;
-}
-.arrow {
-    right: 0;
-    float: right;
-    margin-right: 15px;
-    margin-top: 12px;
-}
 
-.tooltip-inner {
-    font-family: Arial;
-    color:  #00b6fe;
-    max-width: 300px;
-    padding: 3px 8px;
+.secNav li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
     text-align: center;
-    border-color:  #ffffff;
-    background:linear-gradient(to top,rgb(108,159,173),rgb(22,35,35),rgb(59,91,98));
-    border-radius: 4px;
-    margin-right:20px;
-    margin-top:-9px;
+    padding: 7px 1px;
+    text-decoration: none
 }
 
-/* para beside img*/
-p {
-    margin-top: 12px;
-    margin-left: 110px;
+
+.secNav li a:hover:not(.active) {
+    background-color: #4CAF50;
 }
 
-p1 {
-    color: #47bbec;
-    font-size: 15px;
-    padding-left: 18px;
-    line-height: 2;
+
+.active {
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
 }
-/* small written text*/
-.smallText{
-    padding-left: 18px;
+
+
+.text {
+    color: whitesmoke;
+    height: 500px;
+    width:750px;    
 }
 
 
 
-
-/****** Footer ***********/
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    top: 871px;
-    padding-bottom: -49px;
-}
+    /*Fotter part*/
 .line {
-    width: 74%;
-    padding-left: -112px;
-    margin-top: 120px;
-    /* margin-right: -93px; */
-    padding-bottom: 2px;
-    text-align: center;
     background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
     background-size: 100% 5px;
+    margin-top: 445px;
+    padding-bottom: 2px;
 }
+    
+.footer {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 31px;
 
+}
+ 
 .link {
     width: 287px;
     margin-left: auto;
-    /* float: right; */
-    margin-right: 367px;
 }
 
-.speaker_logo {
-    width: 399px;
-    height: 50px;
-    background-repeat: no-repeat;
-    margin-top: 63px;
-    margin-left: 223px;
-    /* margin: 0 auto; */
-}
 
-.cpyWrite {
-    color: white;
-    margin-right: 298px;
-    margin-top: -31px;
-}
 .btm_lnk {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
@@ -319,13 +228,12 @@ p1 {
 }
 
 
-.bottom_div {
-    width: 391px;
-    height: 48px;
-    box-shadow: 0px 1px white;
-    /* margin: 0 auto; */
-    /* margin-right: 710px; */
-    margin-left: 379px;
+.speaker_logo {
+    background-repeat: no-repeat;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 63px;
+    width: 399px;
 }
 
 
@@ -334,9 +242,13 @@ small{
 }
 
 
-.cpyWrite{
-    color: white;
+.bottom_div {
+    width: 391px;
+    height: 48px;
+    box-shadow: 0px 1px white;
+    margin:0 auto;  
 }
+
 
 .botmLogo {
     min-height: 45px;
@@ -356,3 +268,15 @@ small{
     transition-duration: 0.5s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+    /*.modal-content , .close-btn*/

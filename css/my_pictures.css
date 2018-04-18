@@ -156,8 +156,7 @@ body{
     overflow: hidden;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 1px;
-    background-color: #4CAF50;
-    
+    background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
 }
 
 
