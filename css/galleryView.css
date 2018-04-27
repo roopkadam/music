@@ -22,6 +22,9 @@
 body{
     width: 100%;
     margin: 0;
+    line-height: normal;
+    padding: 0px;
+    
 }
 .main {
     background-size: 100%;
@@ -32,6 +35,7 @@ body{
 
 
 .innerContainer {
+ border: 1px solid red;
     background-size: 100% 100%;
     background-image: url(/project/music_website/images/about_me_page_images/Layer.png);
     background-repeat: no-repeat;
@@ -95,9 +99,9 @@ body{
 /* Navigation bar style*/
 .firNav {
     list-style-type: none;
-    margin:0;
+    
     padding: 0;
-    width: 100%;
+    font-size: 16px;
     box-shadow: 3px 3px 3px rgb(233, 233, 233);  
     overflow: hidden;
     border:1px solid rgb(233, 233, 233);
@@ -145,24 +149,21 @@ body{
     clear: both;
 }
 /*Second navigation box*/
-.secNav{
+.secNav {
     list-style-type: none;
-    margin: 0;
     margin-left: 952px;
     padding: 0;
+    font-size: 16px;
     margin-top: 16px;
-    width: 188px;
     box-shadow: 3px 3px 3px rgb(233, 233, 233);
     overflow: hidden;
     border: 1px solid rgb(233, 233, 233);
-    border-radius: 1px;
-    background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+    background: linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
 }
-
 
 .secNav li {
     float: left;
-    width: 49.4%;
+    width: 49.7%;
     border-right: 1px solid #bbb;
 }
 
@@ -197,6 +198,15 @@ body{
     height: 500px;
     width:750px;    
 }
+/******** Caurosal part *************/
+.es-carousel {
+    overflow: hidden;
+    max-height: 74px;
+    background: #000;
+}
+
+
+
 
 
 

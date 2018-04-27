@@ -1,28 +1,413 @@
 <html>
-    <head>
-            <link rel="stylesheet" type="text/css" href="/home/trainee6/Documents/music_website/css/my_video.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flipster Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=550, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.flipster.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/project/music_website/css/styleMain.css">
+  </head>
+  <body>
+<!-- Main-->
+<div class="main">
+  <!-- inner container -->
+  <div class="innerContainer">
+    <!-- header-->
+    <header class="grid-container">
+      <div class="row2">
+        <div class="column c1">
+          <div class="speaker_img"></div>
+        </div>
+        <div class="column c2">
+          <div class="music_logo"></div>
+        </div>
+        <div class="column c3">
+         <div class="search_box"> <input type="text" id="search_box"> </div>      
+        </div>
+      </div>
+     </header>
+        
+    <div class="navigation_bar row2" >
+      <ul class="firNav">
+        <li><a  href="indexAbout_Me.html">About me</a></li>
+        <li><a href="my_pictures.html">My pictures</a></li>
+        <li><a href="my_music.html ">My music</a></li>
+        <li><a href="my_files.html">My files</a></li>
+        <li><a class="active" href="my_video.html">My video</a></li>
+      </ul>
+    </div>
 
-        <div class="main">
-            <div class="container">
-                            <div class="speaker_img"></div>
-                            <div class="music_logo"> </div>
-                            <div class="search_box"><input type="text" id="search_box"></div><br>
-                          <div class="navigation_bar">
-                            <ul>
-                                <li><a href="about_me.html">About me</a></li>
-                                <li><a href="my_pictures.html">My pictures</a></li>
-                                <li><a href="my_music.html">My music</a></li>
-                                <li><a href="my_files.html">My files</a></li>
-                                <li><a class="active" href="my_video.html">My video</a></li>
-                              </ul>
-                          </div><br>
+    <div class="navigation_button row2">
+      <button type="button" class="gridButn active">Grid</button>
+      <button type="button" class="galleryButn">Gallery</button>
+    </div>
 
-                          
+    <div class="grid">
+      <div class="musicInfo">
+        <div class="player">
+             <video id="srcVid" width="65%" height="100%"  controls>
+              </video>
+        </div>
+        <div class="track">
+          <p class="trackInfo"></p>
+        </div>   
+      </div>
+        <!-- GRID VIEW VIDEO-->
+      <div  class="videos">
+        <img id="/project/music_website/videos/AR Rahman unplugged urvashi urvashi_HD.mp4" 
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video1.jpg" alt="img1"
+            data-title="Title:Urvashi Urvashi" data-artist="Artist:AR Rehman" data-genre="Gener:Hindi pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
 
-            </div>
-         </div>
+            data-toggle="tooltip" 
+            data-placement="center" title="AR rehman's unplugged urvashi urvashi mp4 ">
+        <img id="/project/music_website/videos/Sia - Cheap Thrills (Performance Edit)_Full-HD.mp4" 
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video2.jpg" alt="img1"
+             data-title="Title:Cheap Thrills" data-artist="Artist:Sia" data-genre="Gener:Pop" data-size="Size:5.7mb" data-length="Length:5.00" data-rating="5"
 
-    </body>
-    </html>
+             data-toggle="tooltip" 
+             data-placement="bottom" title="Chep Thrills by sea">
+        <img id="/project/music_website/videos/Yad Lagla Full Video - Sairat _ Ajay Gogavle _ Akash Thosar & Rinku Rajguru _ Aj_Full-HD.mp4" class="videoThumb" src="/project/music_website/images/about_me_page_images/video3.jpg" alt="img1"
+             data-title="Title:Sairat" data-artist="Artist:Ajay Atul" data-genre="Gener:Marathi" data-size="Size:6.3mb" data-length="Length:5.00" data-rating="4"
+
+             data-toggle="tooltip" 
+            data-placement="bottom" title="Sairat vy Ajay Atul">
+        <img id="/project/music_website/videos/MOONLIGHT SONATA REMIX - Amazon Echo & KHS_4K.mp4"
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video4.jpg" alt="img1"
+             data-title="Title:MoonLight Sonata" data-artist="Artist:Amazon Echo" data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:5.80" data-rating="5"
+
+             data-toggle="tooltip" 
+             data-placement="bottom" title="MoonLight Sonata by Amazon Echo">
+        <img id="/project/music_website/videos/Michael Jackson - Slave To The Rhythm_HD.mp4" 
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video5.jpg"
+             data-title="Title: Slave To The Rhythm" data-artist="Artist:Michael Jackson" data-genre="Gener:Hollywood pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+
+             data-toggle="tooltip" 
+             data-placement="bottom" title="Slave To The Rhythm by Michael Jackson ">
+        <img id="/project/music_website/videos/2016 MASHUP - ULTIMATE MANNEQUIN CHALLENGE!! - Every hit song in 4 minutes_2K.mp4"
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video7.jpg"
+             data-title="Title:Mashup " data-artist="Artist:Mannequin" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="3"
+
+             data-toggle="tooltip" 
+             data-placement="bottom" title="Mashup by Mannequin" >
+        <img id="/project/music_website/videos/Marshmello - Alone [Monstercat Official Music Video]_2K.mp4" 
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video8.jpg"
+             data-title="Title:Marshmello - Alone " data-artist="Artist:Akon" data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+             data-toggle="tooltip" 
+             data-placement="Marshmello-Alone" title="Mashup by Mannequin">
+        <img id="/project/music_website/videos/STARVING - Hailee Steinfeld - Raelee Nikole & KHS COVER_4K.mp4" 
+            class="videoThumb" src="/project/music_website/images/about_me_page_images/video9.jpg"
+             data-title="Title:Hailee Steinfeld" data-artist="Artist:Raelee Nikole" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+             data-toggle="tooltip" 
+             data-placement="bottom" title="Hailee Steinfeld">
+        <img id="/project/music_website/videos/Marshmello - Ritual (feat. Wrabel) [Official Music Video]_Full-HD.mp4"
+           class="videoThumb" src="/project/music_website/images/about_me_page_images/video134.jpg"
+            data-title="Title:Marshmello - Ritual " data-artist="Artist:feat. Wrabel" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+             data-toggle="tooltip" 
+             data-placement="bottom" title="Marshmello-Ritual">
+        <img id="/project/music_website/videos/Zingat - sairat song(Pramod Shinde)_Full-HD.mp4" 
+           class="videoThumb" src="/project/music_website/images/about_me_page_images/video11.jpg"
+            data-title="Title:Zingat" data-artist="Artist:Pramod Shinde" data-genre="Gener:Marathi" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+
+             data-toggle="tooltip" 
+             data-placement="bottom" title="Sairat zale jiiiii">
+        <img id="/project/music_website/videos/Sairat Zaala ji Full Song - Official Full Video _ Ajay Atul _ Nagraj Popatrao Ma_Full-HD.mp4"
+           class="videoThumb" src="/project/music_website/images/about_me_page_images/video12.jpg"
+            data-title="Title:Sairat Zaala ji " data-artist="Artist: Ajay Atul" data-genre="Gener:Marathi" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+            data-toggle="tooltip" 
+            data-placement="bottom" title="Sairat Song">
+        <img id="/project/music_website/videos/MOONLIGHT SONATA REMIX - Amazon Echo & KHS_4K.mp4"
+           class="videoThumb" src="/project/music_website/images/about_me_page_images/video4.jpg" alt="img1"
+            data-title="Title:MoonLight Sonata" data-artist="Artist: Amazon Echo " data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+            data-toggle="tooltip" 
+            data-placement="bottom" title="MoonLIght Sonata">
+        </div>
+      </div>
+
+        
+                
+        
+         <!-- Flipster part-->
+      <div class="galleryVideo disp">
+        <article id="demo-carousel" class="demo">
+        <div id="carousel">
+            <ul class="flip-items">
+               <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video1.jpg"
+                   data-title="Title:Urvashi Urvashi" data-artist="Artist:AR Rehman" data-genre="Gener:Hindi pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+
+                   data-toggle="tooltip" 
+                   data-placement="bottom" title="AR Rehman:Urvashi">
+                  <source src="/project/music_website/videos/AR Rahman unplugged urvashi urvashi_HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video2.jpg"
+                   data-title="Title:Cheap Thrills" data-artist="Artist:Sia" data-genre="Gener:Pop" data-size="Size:5.7mb" data-length="Length:5.00" data-rating="5"
+
+                    data-toggle="tooltip" 
+                    data-placement="bottom" title="Cheap Thrills by Sea">
+                  <source src="/project/music_website/videos/Sia - Cheap Thrills (Performance Edit)_Full-HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video3.jpg">
+                  <source src="/project/music_website/videos/Yad Lagla Full Video - Sairat _ Ajay Gogavle _ Akash Thosar & Rinku Rajguru _ Aj_Full-HD.mp4" type="video/mp4"
+                   data-title="Title:Yad Lagla Full" data-artist="Artist:Ajay Atul" data-genre="Gener:Marathi Pop" data-size="Size:5.7mb" data-length="Length:5.00" data-rating="5"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="Yad Lagle re ">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video4.jpg"
+                  data-title="Title:MoonLight Sonata" data-artist="Artist:Amazon Echo" data-genre="Gener:Pop" data-size="Size:6.3mb" data-length="Length:5.00" data-rating="4"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="MoonLigth Sonata">
+                  <source src="/project/music_website/videos/MOONLIGHT SONATA REMIX - Amazon Echo & KHS_4K.mp4"  type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video5.jpg"
+                   data-title="Title: Slave To The Rhythm" data-artist="Artist:Michael Jackson" data-genre="Gener:Hollywood pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+
+                   data-toggle="tooltip" 
+                   data-placement="bottom" title="Slave to the Rythm">
+                  <source src="/project/music_website/videos/Michael Jackson - Slave To The Rhythm_HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video6.jpg"
+                  data-title="Title:Monsoon Song" data-artist="Artist:Leakin" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="Monsoon Song">
+                  <source src="/project/music_website/videos/TVF CoCan Studio- Monsoon Song Ft. Leakin' Park_Full-HD.mp4"  type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video8.jpg"
+                   data-title="Title:Marshmello - Alone " data-artist="Artist:Akon" data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+                   data-toggle="tooltip" 
+                   data-placement="bottom" title="Marshmello-Alone">
+                  <source src="/project/music_website/videos/Marshmello - Alone [Monstercat Official Music Video]_2K.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video9.jpg"
+                  data-title="Title:Hailee Steinfeld" data-artist="Artist:Raelee Nikole" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="Hailee Steinfield-RAelee Nikole">
+                  <source src="/project/music_website/videos/STARVING - Hailee Steinfeld - Raelee Nikole & KHS COVER_4K.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video134.jpg"
+                   data-title="Title:Marshmello - Ritual " data-artist="Artist:feat. Wrabel" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+
+                   data-toggle="tooltip" 
+                   data-placement="bottom" title="Marshmello-Ritual">
+                  <source src="/project/music_website/videos/Marshmello - Ritual (feat. Wrabel) [Official Music Video]_Full-HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video11.jpg"
+                  data-title="Title:Zingat" data-artist="Artist:Pramod Shinde" data-genre="Gener:Marathi" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="Zingat full Song">
+                  <source src="/project/music_website/videos/Zingat - sairat song(Pramod Shinde)_Full-HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video12.jpg"
+                  data-title="Title:Sairat Zaala ji " data-artist="Artist: Ajay Atul" data-genre="Gener:Marathi" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="4"
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="Sairat zale jiii">
+                  <source src="/project/music_website/videos/Sairat Zaala ji Full Song - Official Full Video _ Ajay Atul _ Nagraj Popatrao Ma_Full-HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video8.jpg"
+                  data-title="Title:Marshmello-Alone" data-artist="Artist:Monstercat Official Music" data-genre="Gener:Pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="2"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="Marshmello-Alone">
+                  <source src="/project/music_website/videos/Marshmello - Alone [Monstercat Official Music Video]_2K.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+              <li data-flip-title="Red">
+                  <video class="flipsterVideo" width="482" height="300" controls poster="/project/music_website/images/about_me_page_images/video1.jpg"
+                  data-title="Title:Urvashi Urvashi" data-artist="Artist:AR Rehman" data-genre="Gener:Hindi pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+
+                  data-toggle="tooltip" 
+                  data-placement="bottom" title="AR Rehman:Urvashi Urvashi">
+                  <source src="/project/music_website/videos/AR Rahman unplugged urvashi urvashi_HD.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </li>
+            </ul>
+          </div>
+
+
+          <!-- // for play/pause -->
+          <script>
+              $(document).ready(function(){
+              $(".flipsterVideo").click(function(){
+              $('video').each(function() {
+              this.pause();
+                });
+              $(this).get(0).play();
+               });
+              });
+          </script>
+          <script>
+              var carousel = $("#carousel").flipster({
+                  style: 'carousel',
+                  spacing: -0.5,
+                  nav: true,
+                  buttons:   true,
+              });
+          </script>   
+        </article>
+        <div class="trackVideo">
+          <p class="trackInfo"></p>
+        </div>   
+      </div>
+
+
+
+  <!-- <div class="footer"> -->
+    <footer class="footer row2">
+      <div class="line"></div>
+      <div class="link">
+        <a href="default.asp" target="_blank" class="btm_lnk">EULA |</a>
+        <a href="default.asp" target="_blank" class="btm_lnk">Terms of a service |</a>
+        <a href="default.asp" target="_blank" class="btm_lnk">privacy policy</a>
+      </div>
+      <div class="speaker_logo">
+        <img src="/project/music_website/images/about_me_page_images/Untitled-4.png" alt="speaker-logo">
+        <small>copywrite &#169; 2012 My Website. All rights reserved </small>
+      </div>
+
+      <div class="bottom_div">
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/blogger_icon.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/facebook.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/digg-logo.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/linkedin_icon.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/stumbleupon_logo.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/twitter-icon.png">
+        </a>
+      </div>
+    
+    </footer>
+  </div>             
+</div>
+ 
+<!-- scrip for gird video play-->
+   <script>
+    //jq to play video on image click 
+     $('img.videoThumb').click(function(event){
+     $("#srcVid").attr("src",this.id)
+       .get(0).play();
+     });
+   </script>
+
+  
+ <!-- /*jquerry for switching div */ -->
+ <script>
+    $('.galleryButn').click(function() {
+      $('.galleryVideo').removeClass('disp');
+      $('.grid').addClass('disp');
+      $('.galleryButn').addClass('active');
+      $('.gridButn').removeClass('active');
+    })
+    /*View gallery*/
+    $('.gridButn').click(function() {
+      $('.grid').removeClass('disp');
+      $('.galleryVideo').addClass('disp');
+      $('.gridButn').addClass('active');
+      $('.galleryButn').removeClass('active');
+    })
+ </script>     <!--  </div> -->
+
+<!-- //displaying details to <p (grid)> -->
+ <script>
+$(".videoThumb").click(function(){
+  /*$('.videoInfo').removeClass('disp');*/
+  var title = $(this).attr('data-title');
+  var artist = $(this).attr('data-artist');
+  var genre = $(this).attr('data-genre');
+  var length = $(this).attr('data-length');
+  var rating = $(this).attr('data-rating');
+  var index = 1;
+  var img;
+  var str = title +"<br/>"+ artist +"<br/>"+ genre +"<br/>"+ length +"<br/>"+ "Rating:"
+  while (index <= rating) 
+  {
+    str += ' <img src="images/about_me_page_images/star.png">';
+    index++;
+  }
+  $('.trackInfo').html(str);
+});
+
+// info on click on flipster
+$(".flipsterVideo").click(function(){
+  /*$('.videoInfo').removeClass('disp');*/
+  var title = $(this).attr('data-title');
+  var artist = $(this).attr('data-artist');
+  var genre = $(this).attr('data-genre');
+  var length = $(this).attr('data-length');
+  var rating = $(this).attr('data-rating');
+  var index = 1;
+  var img;
+  var str = title +"<br/>"+ artist +"<br/>"+ genre +"<br/>"+ length +"<br/>"+ "Rating:"
+  while (index <= rating) 
+  {
+    str += ' <img src="images/about_me_page_images/star.png">';
+    index++;
+  }
+  $('.trackInfo').html(str);
+});
+
+  
+</script>
+
+</body>
+</html>
+      

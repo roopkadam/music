@@ -1,69 +1,80 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/project/music_website/css/my_files.css">
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="css/bootstrap.min.css"> 
+       
 
-  </head>
-  <body>
-    <!-- Main-->
-    <div class="main">
-      <!-- First container-->
+        <link rel="stylesheet" type="text/css" href="css/styleMain.css">
 
-      <!-- inner container -->
-        <div class="innerContainer">
+    </head>
+    <body>
+<!-- Main-->
+<div class="main">
+<!-- inner container -->
+<div class="innerContainer">
         <!-- header-->
-          <header class="header">
-            <div class="speaker_img"></div>
-            <div class="music_logo"> </div>
-            <div class="search_box"><input type="text" id="search_box"></div><br>
-          </header>
-          
-          <div class="navigation_bar" >
-              <ul class="firNav">
-                  <li><a href="about_me.html">About me</a></li>
-                  <li><a href="my_pictures.html">My pictures</a></li>
-                  <li><a href="my_music.html ">My music</a></li>
-                  <li><a class="active" href="my_files.html">My files</a></li>
-                  <li><a href="my_video.html">My video</a></li>
-              </ul>
-            </div>
-
-
-          <!-- Accordian -->
+    <header class="grid-container">
+      <div class="row2">
+        <div class="column c1">
+          <div class="speaker_img"></div>
+        </div>
+        <div class="column c2">
+          <div class="music_logo"></div>
+        </div>
+        <div class="column c3">
+          <div class="search_box">
+            <input type="text" id="search_box">
+          </div> 
+              
+        </div>
+      </div>
+     </header>
+        
+    <div class="navigation_bar row2" >
+      <ul class="firNav">
+          <li><a href="indexAbout_Me.html">About me</a></li>
+          <li><a href="my_pictures.html">My pictures</a></li>
+          <li><a href="my_music.html ">My music</a></li>
+          <li><a  class="active" href="indexMy_files.html">My files</a></li>
+          <li><a href="my_video.html">My video</a></li>
+      </ul>
+    </div>
+        
+                
+        
+            <!-- Accordian -->
 <div class="container">
-<div class="panel-group" id="accordion">
+   <div class="panel-group" id="accordion">
 
       <!-- Documentation section -->
-    <div class="panel panel-default">
+      <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#collapse1">
-        <h4 class="panel-title">
-        <a  data-parent="#accordion" >Documentation</a>
-        </h4>
+         <h4 class="panel-title">
+          <a  data-parent="#accordion" >Documentation</a>
+         </h4>
         </div>
 
-      <div id="collapse1" class="panel-collapse collapse">
-      <div class="panel-body" > 
-        <div class="arrow row">
-          <img src="/project/music_website/images/about_me_page_images/downArr.png" data-toggle="tooltip" 
-          data-placement="bottom" title="An iconfrom Greek eikom is a reiligious work of art,most commonly
-          a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More
-          broadly the term">
-        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+         <div class="panel-body" > 
+          <div class="arrow row">
+            <img src="/project/music_website/images/about_me_page_images/downArr.png" data-toggle="tooltip" 
+            data-placement="bottom" title="An iconfrom Greek eikom is a reiligious work of art,most commonly
+            a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More
+            broadly the term">
+          </div>
 
-      <div class="docImage row"><img src="/project/music_website/images/about_me_page_images/Documents-icon.jpg" 
-        alt="document-logo">
-        <p1>My Document name.doc</p1><br>
-        <small class="smallText">(240kb)</small><br>
-        <p1> uploaded 06/23/19 at 12:53pm</p1><br>
+        <div class="docImage row"><img src="/project/music_website/images/about_me_page_images/Documents-icon.jpg" 
+          alt="document-logo">
+          <p1>My Document name.doc</p1><br>
+          <small class="smallText">(240kb)</small><br>
+          <p1> uploaded 06/23/19 at 12:53pm</p1><br>
         </div>
-        <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-        <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
-        a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
-        broadly the term.</p>
-        </div>
+         <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
+            <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+            a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
+            broadly the term.</p>
+         </div>
 
 
         <div class="arrow row">
@@ -71,21 +82,22 @@
             data-placement="bottom" title="An iconfrom Greek eikom is a reiligious work of art,most commonly
             a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More
             broadly the term">
-          </div>
+        </div>
         <div class="docImage row"><img src="/project/music_website/images/about_me_page_images/Documents-icon.jpg" 
           alt="document-logo">
           <p1>My Document name.doc</p1><br>
           <small class="smallText">(240kb)</small><br>
           <p1> uploaded 06/23/19 at 12:53pm</p1><br>
-          </div>
-          <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-          <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+        </div>
+        <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
+          <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
           a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
           broadly the term.</p>
-          </div>
+        </div>
     </div>
-    </div>
-    </div>     
+   </div>
+   </div>  
+
  <!--     Presentation Section           -->  
       <div class="panel panel-default" data-toggle="collapse" data-target="#collapse2">
       <div class="panel-heading">
@@ -108,7 +120,7 @@
         <p1> uploaded 06/23/19 at 12:53pm</p1><br>
         </div>
         <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-        <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+        <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
         a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
         broadly the term.</p>
         </div>
@@ -126,7 +138,7 @@
           <p1> uploaded 06/23/19 at 12:53pm</p1><br>
           </div>
           <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-          <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+          <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
           a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
           broadly the term.</p>
           </div>         
@@ -155,7 +167,7 @@
         <p1> uploaded 06/23/19 at 12:53pm</p1><br>
         </div>
         <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-        <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+        <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
         a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
         broadly the term.</p>
         </div>
@@ -173,7 +185,7 @@
         <p1> uploaded 06/23/19 at 12:53pm</p1><br>
         </div>
         <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-        <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+        <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
         a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
         broadly the term.</p>
         </div>
@@ -181,7 +193,8 @@
         </div>
     </div>
   </div>
-<!--     PDF's Section           -->  
+
+  <!--     PDF's Section           -->  
     <div class="panel panel-default">
       <div class="panel-heading" data-toggle="collapse"  data-target="#collapse4">
       <h4 class="panel-title">
@@ -203,7 +216,7 @@
           <p1> uploaded 06/23/19 at 12:53pm</p1><br>
           </div>
           <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-          <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+          <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
           a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
           broadly the term.</p>
           </div>
@@ -221,7 +234,7 @@
             <p1> uploaded 06/23/19 at 12:53pm</p1><br>
             </div>
             <div class="addImg row"><img src="/project/music_website/images/about_me_page_images/add-icon.jpg" >
-            <p>An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
+            <p class="filesP">An icon(from Greek eikom "image")is a reiligious work of art,most commonly<br>
             a pianting,from Eastern Chiristianity and in certain Eastern Catholic Churches.More<br>
             broadly the term.</p>
             </div>
@@ -233,50 +246,51 @@
 
   </div>
 </div>
+
+    <!-- <div class="footer"> -->
+    <footer class="footer row2">
+      <div class="line"></div>
+      <div class="link">
+        <a href="default.asp" target="_blank" class="btm_lnk">EULA |</a>
+        <a href="default.asp" target="_blank" class="btm_lnk">Terms of a service |</a>
+        <a href="default.asp" target="_blank" class="btm_lnk">privacy policy</a>
+      </div>
+      <div class="speaker_logo">
+        <img src="/project/music_website/images/about_me_page_images/Untitled-4.png" alt="speaker-logo">
+        <small>copywrite &#169; 2012 My Website. All rights reserved </small>
+      </div>
+
+      <div class="bottom_div">
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/blogger_icon.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/facebook.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/digg-logo.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/linkedin_icon.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/stumbleupon_logo.png">
+        </a>
+        <a href=# class="botmLogo">
+          <img class="botmLogo" src="/project/music_website/images/about_me_page_images/twitter-icon.png">
+        </a>
+      </div>
     
+    </footer>
+  </div>             
+</div>
+      <!--  </div> -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();   
     });
   </script>
-    
-        <!-- <div class="footer"> -->
-        <footer class="footer">
-        <div class="line"></div>
-        <div class="link">
-        <a href="default.asp" target="_blank" class="btm_lnk">EULA |</a>
-        <a href="default.asp" target="_blank" class="btm_lnk">Terms of a service |</a>
-        <a href="default.asp" target="_blank" class="btm_lnk">privacy policy</a>
-        </div>
-        <div class="speaker_logo">
-        <img src="/project/music_website/images/about_me_page_images/Untitled-4.png" alt="speaker-logo"></div>
-        <div class="cpyWrite">copywrite &#169; 2012 My Website. All rights reserved</div>
-        
-        <div class="bottom_div">
-        <a href=# class="botmLogo">
-        <img class="botmLogo" src="/project/music_website/images/about_me_page_images/blogger_icon.png">
-        </a>
-        <a href=# class="botmLogo">
-        <img class="botmLogo" src="/project/music_website/images/about_me_page_images/facebook.png">
-        </a>
-        <a href=# class="botmLogo">
-        <img class="botmLogo" src="/project/music_website/images/about_me_page_images/digg-logo.png">
-        </a>
-        <a href=# class="botmLogo">
-        <img class="botmLogo" src="/project/music_website/images/about_me_page_images/linkedin_icon.png">
-        </a>
-        <a href=# class="botmLogo">
-        <img class="botmLogo" src="/project/music_website/images/about_me_page_images/stumbleupon_logo.png">
-        </a>
-        <a href=# class="botmLogo">
-        <img class="botmLogo" src="/project/music_website/images/about_me_page_images/twitter-icon.png">
-        </a>
-        </div>
-        </footer>
-      </div> 
-
-      </div>
-    </div>
-
-  </body>
+</body>
 </html>

@@ -1,0 +1,942 @@
+
+/* Create three unequal columns that floats next to each other */
+
+/* Clear floats after the columns */
+
+
+@font-face {
+    font-family: "MaiandraGD";
+    src: url(/project/music_website/font/MAIAN.TTF);
+}
+body{
+    width: 100%;
+    margin: 0;
+    
+}
+.main {
+    background-size: 100%;
+    background-image: url(/project/music_website/images/about_me_page_images/bg1.jpg);
+    background-repeat: no-repeat;
+    width:100%;
+} 
+
+
+.innerContainer {
+    background-size: 100% 100%;
+    background-image: url(/project/music_website/images/about_me_page_images/Layer.png);
+    background-repeat: no-repeat;
+    width: 75%;
+    min-height: 1292px;
+    margin: 0 auto;
+    position:relative;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.column {
+    float: left;
+    padding-top: 5px;
+}
+
+
+.c1, .c3 {
+    width: 21%;
+    height: 20%;
+}
+
+
+.c2 {
+    width: 52.1%;
+    height: 20%;
+}
+
+
+.speaker_img {
+    position: absolute;
+    background-image: url(/project/music_website/images/about_me_page_images/Untitled-1.jpg);
+    background-size: 100%;
+    margin-top: 10px;
+    margin-left: -10px;
+    height: 150px;
+    width: 240px;
+}
+
+
+.music_logo {
+    background-image: url(/project/music_website/images/about_me_page_images/Music-logo.png);
+    background-repeat: no-repeat;
+    background-size: 337px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 331px;
+}
+
+
+.search_box {
+    background-color: rgb(216, 213, 213);
+    background-image: url(/project/music_website/images/about_me_page_images/search_icon.png);
+    background-position-x: 5px;
+    background-position-y: 7px;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-left: 97px;
+    height: 25px;
+    width: 200px;
+}
+
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+
+#search_box {     /* search text box*/
+    border: 1px solid rgb(216, 213, 213);
+    margin-left: 28px;
+    height:21px;
+    width: 171px;
+}
+
+/* Navigation bar style*/
+.firNav {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);  
+    overflow: hidden;
+    border:1px solid rgb(233, 233, 233);
+    border-radius: 1px;
+    background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+    margin-top: 5px;
+} 
+
+
+.firNav li {
+    width: 19.99%;
+    float: left;
+    border-right: 1px solid #bbb
+}
+
+
+.firNav li:last-child {
+    border-right: none;
+}
+
+
+.firNav li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+
+.firNav li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+
+
+.text {
+    width:750px;
+    height: 500px;
+    color: whitesmoke;
+}
+
+
+.li {
+    clear: both;
+}
+
+/***  Buttons in navigation bar***/
+.navigation_button{
+    float:right;
+}
+
+
+.gridButn {
+    background: linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+    width: 80px;
+    color: white;
+    height: 33px;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    margin-right: -5px; 
+}
+
+
+.galleryButn{
+   background: linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+    width: 80px;
+    color: white;
+    height: 33px;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+}
+
+
+.listButn{
+     background: linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+    width: 80px;
+    color: white;
+    height: 33px;
+    box-shadow: 3px 3px 3px rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    margin-right: -5px;
+}
+
+
+ .gridButn a.active, .panel-default>.panel-heading.active{
+    background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+ }
+
+
+h2 {
+    font-family: MaiandraGD;
+    font-size: 36px;/* Approximation due to font substitution */   
+    font-weight: 400;
+    line-height: 28px;/* Approximation due to font substitution*/
+}
+
+
+.paragraph {
+    font-family: MaiandraGD;
+    color:  #ffffff;
+    font-size: 50px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 22px;/* Approximation due to font substitution */
+    font-size: 18px;
+}
+
+
+.para{
+    margin-left:0px;
+}
+
+
+.paraDiv {
+    float: left;
+    width: 50%;
+}
+.guitar_img { 
+    float: right;  
+}
+
+/*My Pictures*/
+.instImage1 {
+ cursor: pointer;
+ margin-top: 5px;
+ padding-left: 16px;
+ margin-top: 66px;
+}
+
+
+.singImg1 {
+    width: 207px;
+    height: 95px;
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-top: 20px;
+    background-size: 100% 100%;
+    border: 1px solid white;
+}
+
+.singImg1:hover {
+    opacity: 0.5;
+}
+
+
+.disp {
+    display: none;
+}
+
+/*Griv view*/
+.instImage2 {
+    cursor: pointer; 
+    padding-left: 16px
+}
+
+
+.singImg2 {
+    width: 207px;
+    height: 95px;
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-top: 20px;
+    background-size: 100% 100%;
+    border: 1px solid white;
+}
+
+
+.singImg2:hover {
+    opacity: 0.5;
+}
+
+
+.instImage3 {
+    cursor: pointer;
+    padding-left: 16px
+}
+
+
+.singImg3 {
+    width: 207px;
+    height: 95px;
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-top: 20px;
+    background-size: 100% 100%;
+    border: 1px solid white;
+}
+
+
+.singImg3:hover {
+    opacity: 0.5;
+}
+
+
+.closebtn {
+    border-radius:19px;
+    background-color: rgba(0,0,0,0.9);
+    border:1px solid white;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 26px;
+    height: 35px;
+    position: absolute;
+    right: -16px;
+    text-align: center;
+    top: -18px;
+    width: 35px;    
+}
+
+
+/* The expanding image container */
+.container_img {
+  border: 2px solid white;
+  background-color: rgb(0,0,0);
+  background-color: #151414;
+  display: none;
+  margin-top: 185px;
+  margin-left: 100px;
+  position: fixed;
+  padding-top: 100px;
+  padding-left: 49px;
+  padding-right: 49px;
+  padding-top: 9px;
+  top: 0;
+  width: 574px;
+  z-index: 1;
+}
+
+
+    /* Modal image after click*/
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 545px;
+  height: 335px;
+  margin-left: -37px;
+  margin-top: 3px;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  border: 1px solid white;
+
+}
+
+/*Text inside modal image*/
+#imgtext {
+  margin-top: 60px;
+  font-family: Arial;
+  color:  #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+} 
+
+/******** Caurosal part *************/
+/* Down Image */
+.rg-image {
+  position: relative;
+  text-align: center;
+  line-height: 0px;
+  width: 59%;
+  margin: 0 auto;
+}
+
+
+.es-carousel {
+  overflow: hidden;
+  max-height: 54px;
+  background:none;
+}
+/*Arrow on thumbnails*/
+.es-nav span {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  background: transparent url(/project/music_website/images/musical_inst/arrowww.png) no-repeat;
+  width: 25px;
+  height: 49px;
+  margin-top: -23px;
+  text-indent: -9000px;
+  cursor: pointer;
+  opacity: 1;
+  margin-left: -41px;
+}
+
+
+.es-nav span.es-nav-next {
+  right: 8px;
+  left: auto;
+  margin-right: -42px;
+  background-position: top right;
+  background: transparent url(/project/music_website/images/musical_inst/arrw.png) no-repeat;
+}
+.es-carousel-wrapper {
+  background :none;
+  padding:0px; 
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+  position: relative;
+ -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+ -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.9); 
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.rg-image-wrapper {
+  position: relative;
+  padding: 20px 30px;
+  background:none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px; 
+  min-height: 20px;
+}
+
+
+.rg-image-nav a {
+  position: absolute;
+  top: 0px; 
+  left: 0px; 
+  background:none;
+}
+
+
+.rg-image-nav a.rg-image-nav-next {
+  right: 0px;
+  left: auto;
+  background-position: 115% 50%;
+  -moz-border-radius: 0px 10px 10px 0px;
+  background: none;
+}
+
+
+.rg-view {
+  height: 30px;
+  margin-top: 45px;
+}
+
+
+.rg-view a {
+  display: block; 
+  float: none; 
+  width: 0px; 
+  height:0px;
+  background:transparent; 
+  border: none; 
+  opacity: none;
+}
+
+
+.rg-caption {
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.rg-caption p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
+  line-height: 16px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/***************** My Files****************/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: -16px;
+  margin-top: 30px;
+}
+
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 3px 3px 3px 1px;
+}
+
+
+.panel {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  background:linear-gradient(to top,rgb(50,150,49) ,rgb(148,220,52));
+  box-shadow: 4px 4px 4px  rgb(233, 233, 233);
+}
+
+
+.panel-default>.panel-heading:hover{
+  background: linear-gradient(0deg, #0c4c5a 0%, #47bbec 100%);
+  font-weight: bold;
+}
+
+
+.panel-body {
+  padding: 0px;
+  position: relative;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.panel-title > a{
+  text-decoration: none;
+}
+
+/* document folder image*/
+.docImage img {
+  float: left;
+  border-radius: 9px;
+  margin-left: 21px;
+  margin-top: 7px;
+}
+
+/* content in div*/
+.docContent{
+  padding-left: 2px;
+}
+
+/* add icon */
+.addImg img {
+  float: left;
+  border-radius: 10px;
+  margin-left: 86px;
+  margin-top: 10px;
+}
+
+
+.addImg {
+  padding-bottom: 15px;
+  width: 100%;
+  margin-left: 0px;
+  border-bottom: 1px solid #ffffff;
+}
+
+
+.docImage {
+  width: 85%;
+  position: relative;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+
+.arrow {
+  right: 0;
+  float: right;
+  margin-right: 15px;
+  margin-top: 12px;
+}
+
+
+.tooltip-inner {
+  font-family: Arial;
+  color:  #00b6fe;
+  max-width: 300px;
+  padding: 3px 8px;
+  text-align: center;
+  border-color:  #ffffff;
+  background:linear-gradient(to top,rgb(108,159,173),rgb(22,35,35),rgb(59,91,98));
+  border-radius: 4px;
+  margin-right:20px;
+  margin-top:-9px;
+}
+
+/* para beside img*/
+.filesP {
+  margin-top: 12px;
+  margin-left: 110px;
+}
+
+
+p1 {
+  color: #47bbec;
+  font-size: 15px;
+  padding-left: 18px;
+  line-height: 2;
+}
+
+/* small written text*/
+.smallText {
+  padding-left: 18px;
+}
+
+/*********** My Video***************/
+header.grid-container {
+  height: fit-content;
+}
+
+
+.videoThumb {
+  width:271px;
+  height: 143px;
+  margin-left: 5px;
+  margin-right: 4px;
+  margin-top: 20px;
+  background-size: 100% 100%;
+  border: 1px solid white;
+}
+
+
+.playVideo {
+  width: 345px;
+  height: 195px;
+}
+
+/****flipster ***/
+.gallery {
+  margin-top: 75px;
+}
+
+
+.galleryMusic{
+  margin-top: 75px;
+}
+
+.galleryVideo {
+  margin-top: 70px;
+}
+
+.poster{
+    width:482px;
+}
+
+
+.flipster {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 94%;
+  min-height: 304px;
+}
+
+
+.flipster__button {
+  position: absolute;
+  top: 25%;
+  display: block;
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 15px;
+  opacity: .5;
+  transition: opacity 500ms ease;
+  margin: -1em 2em;
+}
+
+.flipster__button svg {
+  width: none;
+  stroke:none; 
+  fill: none; 
+  stroke-width: 3; 
+  stroke-linecap: none; 
+}
+.flipster__nav {
+  display: none;
+  margin: 0 0 4em;
+  text-align: center;
+  position: relative;
+}
+
+
+.flipster__button--prev {
+  left:0;
+  background: url(/project/music_website/images/about_me_page_images/arrow) no-repeat;
+  opacity: 1;
+  margin-top: 50px;
+}
+
+.flipster__button--next {
+  right: 0;
+  background: url(/project/music_website/images/about_me_page_images/arrw.png) no-repeat;
+  opacity: 1;
+  margin-top: 50px;
+}
+
+/****---track info of My videos ----***/
+/*track info on player*/
+.trackInfo {
+  font-family: Arial;
+  color:  #ffffff;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+
+/*flipster track details*/
+.musicInfo {
+  width: 100%;
+  min-height: 252px;
+  margin-top: 36px;
+}
+.player {
+  width: 43%;
+  height: 181px;
+  float: left;
+}
+
+.track {
+  width: 50%;
+  height: 250px;
+  float: right;
+}
+
+
+.trackVideo {
+ width: 100%;
+ height: 250px;
+ float: right;
+}
+
+
+.trackVideo > .trackInfo {
+  width: 100%;
+  text-align: center;
+}
+
+/******* My Music************/
+.musicInfoGallery {
+  width: 100%;
+  margin-top: 80px;
+}
+
+
+.playerGallery {
+  width: 49%;
+  height: 64px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.playerList {
+  width: 26.5%;
+  height: 58px;
+  padding-top: 21px;
+  float: left;
+  margin-bottom: 9px;
+  box-shadow: 3px 3px 3px solid red;
+}
+
+
+.trackInfoFlipster > p {
+  margin-left: none;
+}
+
+
+.trackFlipster {
+  width: 50%;
+  height: 143px;
+  margin-left: 247px;
+}
+
+
+.trackInfoFlipster {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.flipster--carousel .flipster__container, .flipster--carousel .flipster__item, .flipster--carousel .flipster__item__content {
+  transition: all 350ms ease-in-out;
+  transition-timing-function: cubic-bezier(.56, .12, .12, .98);
+  padding-top:0; 
+}
+
+
+.audioThumb {
+  width: 297px;
+  height: 222px;
+  margin-top: 41px;
+  background-size: 100% 100%;
+  border: 1px solid white;
+}
+
+/*music list viev*/
+.musList {
+  margin-top: 13px;
+}
+
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px grey;
+}
+
+
+td, th {
+  padding: 10px;
+  padding-left: 59px;
+  color: white;
+  font-family: arial;
+}
+
+
+.listViewAudio {
+  border: 2px solid grey;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.onOffList{
+  border:1px solid grey;
+  box-shadow: 3px 3px 3px grey;
+}
+
+/* footer */
+.line {
+  width: 100%;
+  margin-top: 90px;
+  padding-bottom: 2px;
+  text-align: center;
+  background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
+  background-size: 100% 5px;
+}
+
+
+img {
+  vertical-align: bottom;
+}
+
+
+.footer {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 31px;
+  padding-top: 22px;
+  position: absolute;bottom: 0;
+ }
+
+
+.pip::after{
+  content: " |";
+}
+
+
+.link {
+  width: 287px;
+  margin-left: auto;
+}
+
+
+.btm_lnk {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color:rgb(121,195,206);
+}
+
+
+.speaker_logo {
+  width: 399px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 63px;
+}
+
+
+small{
+  color: white;
+}
+
+
+.bottom_div {
+  width: 391px;
+  height: 48px;
+  box-shadow: 0px 1px white;
+  margin:0 auto;  
+}
+
+
+.botmLogo {
+  min-height: 45px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+.botmLogo img {
+  position: relative;
+  bottom: -20px;
+}
+
+
+.botmLogo:hover img {
+  bottom: 0;
+  transition-duration: 0.5s;
+}
+
+
+.active {
+  background: linear-gradient(to top, rgba(22,110,136), rgba(29,170,213));
+}

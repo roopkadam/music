@@ -1,31 +1,592 @@
+<!DOCTYPE html>
 <html>
-    <head>
-            <link rel="stylesheet" type="text/css" href="/project/music_website/css/my_music.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flipster Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=550, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.flipster.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="/project/music_website/css/styleMain.css">
+  </head>
+<body>
+<!-- Main-->
+  <div class="main">
+    <!-- inner container -->
+    <div class="innerContainer">
+      <!-- header-->
+      <header class="grid-container">
+        <div class="row2">
+          <div class="column c1">
+            <div class="speaker_img"></div>
+          </div>
+          <div class="column c2">
+            <div class="music_logo"></div>
+          </div>
+          <div class="column c3">
+            <div class="search_box">
+              <input type="text" id="search_box">
+            </div>         
+          </div>
+        </div>
+       </header>
+          
+      <div class="navigation_bar row2" >
+        <ul class="firNav">
+            <li><a  href="indexAbout_Me.html">About me</a></li>
+            <li><a href="my_pictures.html">My pictures</a></li>
+            <li><a class="active" href="my_music.html ">My music</a></li>
+            <li><a href="my_files.html">My files</a></li>
+            <li><a href="my_video.html">My video</a></li>
+        </ul>
+      </div>
+      <div class="navigation_button row2">
+        <button type="button" class="gridButn active">Grid</button>
+        <button type="button" class="listButn">List</button>
+        <button type="button" class="galleryButn">Gallery</button>
+      </div><br>
 
-        <div class="main">
-            <div class="container">
-                            <div class="speaker_img"></div>
-                            <div class="music_logo"> </div>
-                            <div class="search_box"><input type="text" id="search_box"></div><br>
-                          <div class="navigation_bar">
-                            <ul>
-                                <li><a  href="about_me.html">About me</a></li>
-                                <li><a href="my_pictures.html">My pictures</a></li>
-                                <li><a class="active" href="my_music.html">My music</a></li>
-                                <li><a href="my_files.html">My files</a></li>
-                                <li><a href="my_video.html">My video</a></li>
-                              </ul>
-                          </div><br>
 
 
-                    
+      <div class="grid">
+        <div class="musicInfo">
+          <div class="player">
+             <video id="srcVid" width="65%" height="100%"  controls> </video>
+          </div>
+          <div class="track">
+            <p class="trackInfo"></p>
+          </div>   
+        </div>
+          <!-- GALLERY VIEW VIDEO-->
+        <div  class="videos">
+          <img id="audio/04 - Aadat [AbhinavRocks].mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/aadat1.jpg" alt="img1"
+              data-title="Title:Aadat by Abhinav" data-artist="Artist:Abhinav" data-genre="Gener:Hindi pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+              data-toggle="tooltip" 
+              data-placement="center" title="Abhinav's Aadat Song">
 
-                          
+          <img id="audio/Aashiqui 2 Mashup .mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/aasikiMashup2.jpg" alt="img1"
+              data-title="Title:Aashiqui 2 Mashup .mp3" data-artist="Artist:Shraddha Kapoor" data-genre="Gener:Hindi" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+              data-toggle="tooltip" 
+              data-placement="center" title="Aashiqui 2 Mashup .mp3">
 
-            </div>
+          <img id="audio/Airtel_Fast.mp3"
+              class="videoThumb" src="/project/music_website/images/audioImages/airtelFast3.png" alt="img1"
+              data-title="Title:Airtel_Fast.mp3" data-artist="Artist:Airtel"  data-genre="Gener:Ringtone" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+              data-toggle="tooltip" 
+              data-placement="center" title="Airtel_Fast">
+         
+          <img id="audio/Akon_Beautiful.mp3"
+              class="videoThumb" src="/project/music_website/images/audioImages/akonBeautiful.jpg" alt="img1"
+              data-title="Title:Akon_Beautiful.mp3"" data-artist="Artist:Akon"  data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="5"
+              data-toggle="tooltip" 
+              data-placement="center" title="Akon Beautiful.mp3">
+          
+          <img id="audio/akon-right now.mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/akonRight.jpg"
+               data-title="Title:Akon Right now.mp3"" data-artist="Artist:Akon"  data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+               data-toggle="tooltip" 
+               data-placement="center" title="Akon Right Nowmp3">
+          
+          <img id="audio/Beautiful-Liar.mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/beautifulLair.jpg"
+               data-title="Title:Beautiful-Liar.mp3"" data-artist="Artist:Akon"  data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+               data-toggle="tooltip" 
+               data-placement="center" title="Beautiful Liar.mp3">
+          
+          <img id="audio/blueEyes.mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/blueEyes.jpg"
+               data-title="Title:Blue Eyes.mp3"" data-artist="Artist:Honey Singh" data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+               data-toggle="tooltip" 
+               data-placement="center" title="Blue Eyes by Honey Singh">
+          
+          <img id="audio/Break Up Mashup .mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/breakupMashup.jpg"
+               data-title="Title:Break Up Mashup .mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="5"
+               data-toggle="tooltip" 
+               data-placement="center" title="Break Up Mashup">
+          
+          <img id="audio/Aashiqui 2 Mashup .mp3" 
+              class="videoThumb" src="/project/music_website/images/audioImages/ashiki2.jpg" alt="img1"
+               data-title="Title:Aashiqui 2 Mashup.mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+               data-toggle="tooltip" 
+               data-placement="center" title="Break Up Mashup">
+          
+          <img id="audio/ImranKhan-Bewafa.mp3" 
+             class="videoThumb" src="/project/music_website/images/audioImages/bewafaByImran.jpg"
+               data-title="Title:ImranKhan-Bewafa.mp3" data-artist="Artist:Imran Khan"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+               data-toggle="tooltip" 
+               data-placement="center" title="Bewafa By Imran Khan">
+          
+          <img id="audio/Kabhi Jo Baadal.mp3"
+             class="videoThumb" src="/project/music_website/images/audioImages/kabhiJoBadal.jpg"
+               data-title="Title:Kabhi Jo Baadal.mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+               data-toggle="tooltip" 
+               data-placement="center" title="Kabhi Jo Baadal.mp3">
+          
+          <img id="audio/Zindagi Do Pal Ki .mp3"
+             class="videoThumb" src="/project/music_website/images/audioImages/zindagiDoPal.jpg"
+               data-title="Title:Zindagi Do Pal Ki .mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+               data-toggle="tooltip" 
+               data-placement="center" title="Zindagi Do Pal Ki .mp3">
+        </div>
+      </div>
+
+      <div class="musList disp">
+         <div class="playerList">
+             <audio class="listViewAudio" id="srcAud"  controls> </audio>
          </div>
+        <table id="listStatusInfo">
+            <tr class="listAudio">
+              <th>No</th>
+              <th>Status</th> 
+              <th>Song Name</th>
+              <th>Artist</th>
+              <th>Gener</th>
+              <th>Length</th>
+              <th>Size</th>
+              <th>Rating</th>
+            </tr>
+            <tr class="listAudio" id="audio/04 - Aadat [AbhinavRocks].mp3">
+              <td>1</td>
+              <td class="startStop">Play</td>
+              <td>Aadat</td>
+              <td>Aatif Aslam</td>
+              <td>Hindi Pop</td>
+              <td>5.00</td>
+              <td>5mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
 
-    </body>
-    </html>
+             <tr class="listAudio" id="audio/Aashiqui 2 Mashup .mp3">
+              <td>2</td>
+              <td class="startStop">Play</td>
+              <td>Aashiqui 2 Mashup</td>
+              <td>Arjit Singh</td>
+              <td>Hindi Pop</td>
+              <td>5.00</td>
+              <td>5mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+            <tr class="listAudio" id="audio/Airtel_Fast.mp3">
+              <td>3</td>
+              <td class="startStop">Play</td>
+              <td>Airtel_Fast</td>
+              <td>Arjit Singh</td>
+              <td>Hindi Ringtone</td>
+              <td>4.30</td>
+              <td>2mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+            <tr class="listAudio" id="audio/Akon_Beautiful.mp3">
+              <td>4</td>
+              <td class="startStop">Play</td>
+              <td>Akon_Beautiful</td>
+              <td>Akon</td>
+              <td>Hollywood Pop</td>
+              <td>4.30</td>
+              <td>6mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+            <tr class="listAudio" id="audio/akon-right now.mp3">
+              <td>5</td>
+              <td class="startStop">Play</td>
+              <td>akon-right now</td>
+              <td>Akon</td>
+              <td>Hollywood Pop</td>
+              <td>5.30</td>
+              <td>5.5mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+            <tr class="listAudio" id="audio/Beautiful-Liar.mp3">
+              <td>6</td>
+              <td class="startStop">Play</td>
+              <td>Beautiful-Liar</td>
+              <td>Akon</td>
+              <td>Hollywood Pop</td>
+              <td>5.30</td>
+              <td>5.5mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+             <tr class="listAudio" id="audio/blueEyes.mp3">
+              <td>7</td>
+              <td class="startStop">Play</td>
+              <td>BlueEyes</td>
+              <td>Honey Singh</td>
+              <td>Bollywood Pop</td>
+              <td>5.30</td>
+              <td>5.4mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+             <tr class="listAudio" id="audio/Break Up Mashup .mp3">
+              <td>8</td>
+              <td class="startStop">Play</td>
+              <td>Break Up Mashup</td>
+              <td>Arjit Singh</td>
+              <td>Bollywood Pop</td>
+              <td>5.30</td>
+              <td>5.4mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+            <tr class="listAudio" id="audio/Aashiqui 2 Mashup .mp3">
+              <td>9</td>
+              <td class="startStop">Play</td>
+              <td>Aashiqui 2 Mashup</td>
+              <td>Arjit Singh</td>
+              <td>Bollywood Pop</td>
+              <td>4.30</td>
+              <td>5.4mb</td>
+              <td><img src="images/about_me_page_images/star.png">
+              <img src="images/about_me_page_images/star.png">
+              <img src="images/about_me_page_images/star.png"></td>
+            </tr>
+
+            <tr class="listAudio" id="audio/ImranKhan-Bewafa.mp3">
+              <td>10</td>
+              <td class="startStop">Play</td>
+              <td>Bewafa</td>
+              <td>Shankar</td>
+              <td>Bollywood Pop</td>
+              <td>4.30</td>
+              <td>5.5mb</td>
+              <td>4</td>
+            </tr>
+
+             <tr class="listAudio" id="audio/Kabhi Jo Baadal.mp3">
+              <td>11</td>
+              <td class="startStop">Play</td>
+              <td>Kabhi Jo Baadal</td>
+              <td>Himesh Reshamiya</td>
+              <td>Bollywood Pop</td>
+              <td>4.30</td>
+              <td>6.5mb</td>
+              <td>
+                <img src="images/about_me_page_images/star.png">
+                <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+
+            <tr class="listAudio" id="audio/Zindagi Do Pal Ki .mp3">
+              <td>12</td>
+              <td class="startStop">Play</td>
+              <td>Zindagi Do Pal Ki</td>
+              <td>Arman Malik</td>
+              <td>Bollywood Pop</td>
+              <td>4.30</td>
+              <td>7.5mb</td>
+              <td>
+              <img src="images/about_me_page_images/star.png">
+              <img src="images/about_me_page_images/star.png">
+              <img src="images/about_me_page_images/star.png">
+              <img src="images/about_me_page_images/star.png">
+              <img src="images/about_me_page_images/star.png">
+              </td>
+            </tr>
+        </table>
+      </div>
+                
+      <!-- Flipster part-->
+      <div class="galleryMusic disp">
+        <div class="musicInfoGallery">
+            <div class="playerGallery">
+             <audio id="audVid" width="65%" height="100%"  controls> </video>
+            </div>
+        </div>
+      <article id="demo-carousel" class="demo">
+        <div id="carousel">
+          <ul class="flip-items">
+             <li data-flip-title="Red">
+                <img id="/project/music_website/audio/04 - Aadat [AbhinavRocks].mp3" 
+                class="audioThumb" src="/project/music_website/images/audioImages/aadat1.jpg" alt="img1"
+                data-title="Title:Aadat by Abhinav" data-artist="Artist:Abhinav" data-genre="Gener:Hindi pop" data-size="5.3mb" data-length="5.00" data-rating="5"
+                data-toggle="tooltip" 
+                data-placement="center" title="Abhinav's Aadat Song">
+            </li>
+            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                <img id="/project/music_website/audio/Aashiqui 2 Mashup .mp3" 
+                class="audioThumb" src="/project/music_website/images/audioImages/aasikiMashup2.jpg" alt="img1"
+                data-title="Title:Aashiqui 2 Mashup .mp3" data-artist="Artist:Shraddha Kapoor"  data-genre="Gener:Hindi" data-size="5.3mb" data-length="4.00" data-rating="4"
+                data-toggle="tooltip" 
+                data-placement="center" title="Aashiqui 2 Mashup .mp3">
+
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Airtel_Fast.mp3"
+                class="audioThumb" src="/project/music_website/images/audioImages/airtelFast3.png" alt="img1"
+                data-title="Title:Airtel_Fast.mp3" data-artist="Artist:Airtel"  data-genre="Gener:Ringtone" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+                data-toggle="tooltip" 
+                data-placement="center" title="Airtel_Fast">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Akon_Beautiful.mp3"
+               class="audioThumb" src="/project/music_website/images/audioImages/akonBeautiful.jpg" alt="img1"
+                data-title="Title:Akon_Beautiful.mp3"" data-artist="Artist:Akon"  data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="5"
+                data-toggle="tooltip" 
+                data-placement="center" title="Akon Beautiful.mp3">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/akon-right now.mp3" 
+                class="audioThumb" src="/project/music_website/images/audioImages/akonRight.jpg"
+                 data-title="Title:Akon Right now.mp3"" data-artist="Artist:Akon"  data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Akon Right Nowmp3">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Beautiful-Liar.mp3" 
+                class="audioThumb" src="/project/music_website/images/audioImages/beautifulLair.jpg"
+                 data-title="Title:Beautiful-Liar.mp3"" data-artist="Artist:Akon"  data-genre="Gener:Hollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Beautiful Liar.mp3">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Zindagi Do Pal Ki .mp3"
+                class="audioThumb" src="/project/music_website/images/audioImages/zindagiDoPal.jpg"
+                 data-title="Title:Zindagi Do Pal Ki .mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Zindagi Do Pal Ki .mp3">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/blueEyes.mp3" 
+                class="audioThumb" src="/project/music_website/images/audioImages/blueEyes.jpg"
+                 data-title="Title:Blue Eyes.mp3"" data-artist="Artist:Honey Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Blue Eyes by Honey Singh">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Kabhi Jo Baadal.mp3"
+               class="audioThumb" src="/project/music_website/images/audioImages/kabhiJoBadal.jpg"
+                 data-title="Title:Kabhi Jo Baadal.mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Kabhi Jo Baadal.mp3">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Break Up Mashup .mp3" class="audioThumb" src="/project/music_website/images/audioImages/breakupMashup.jpg" data-title="Title:Break Up Mashup .mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="5" data-toggle="tooltip" data-placement="center" title="Break Up Mashup">
+            </li>
+            <li data-flip-title="Red">
+               <img id="/project/music_website/audio/ImranKhan-Bewafa.mp3" 
+               class="audioThumb" src="/project/music_website/images/audioImages/bewafaByImran.jpg"
+                 data-title="Title:ImranKhan-Bewafa.mp3" data-artist="Artist:Imran Khan" data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="3"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Bewafa By Imran Khan">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/Zindagi Do Pal Ki .mp3"
+                class="audioThumb" src="/project/music_website/images/audioImages/zindagiDoPal.jpg"
+                 data-title="Title:Zindagi Do Pal Ki .mp3" data-artist="Artist:Arjit Singh"  data-genre="Gener:Bollywood Pop" data-size="Size:5.3mb" data-length="Length:4.00" data-rating="4"
+                 data-toggle="tooltip" 
+                 data-placement="center" title="Zindagi Do Pal Ki .mp3">
+            </li>
+            <li data-flip-title="Red">
+                <img id="/project/music_website/audio/04 - Aadat [AbhinavRocks].mp3" 
+                class="audioThumb" src="/project/music_website/images/audioImages/aadat1.jpg" alt="img1"
+                data-title="Title:Aadat by Abhinav" data-artist="Artist:Abhinav"  data-genre="Gener:Hindi pop" data-size="Size:5.3mb" data-length="Length:5.00" data-rating="5"
+                data-toggle="tooltip" 
+                data-placement="center" title="Abhinav's Aadat Song">
+            </li>
+          </ul>
+        </div>
+        <script>
+          var carousel = $("#carousel").flipster({
+            style: 'carousel',
+            spacing: -0.5,
+            nav: true,
+            buttons:true,
+          });
+        </script>
+        
+      </article>
+        <div class="trackFlipster">
+          <p class="trackInfoFlipster"></p>
+        </div> 
+      </div>
+  
+      <!-- <div class="footer"> -->
+      <footer class="footer row2">
+        <div class="line"></div>
+        <div class="link">
+          <a href="default.asp" target="_blank" class="btm_lnk">EULA |</a>
+          <a href="default.asp" target="_blank" class="btm_lnk">Terms of a service |</a>
+          <a href="default.asp" target="_blank" class="btm_lnk">privacy policy</a>
+        </div>
+        <div class="speaker_logo">
+          <img src="/project/music_website/images/about_me_page_images/Untitled-4.png" alt="speaker-logo">
+          <small>copywrite &#169; 2012 My Website. All rights reserved </small>
+        </div>
+
+        <div class="bottom_div">
+          <a href=# class="botmLogo">
+            <img class="botmLogo" src="/project/music_website/images/about_me_page_images/blogger_icon.png">
+          </a>
+          <a href=# class="botmLogo">
+            <img class="botmLogo" src="/project/music_website/images/about_me_page_images/facebook.png">
+          </a>
+          <a href=# class="botmLogo">
+            <img class="botmLogo" src="/project/music_website/images/about_me_page_images/digg-logo.png">
+          </a>
+          <a href=# class="botmLogo">
+            <img class="botmLogo" src="/project/music_website/images/about_me_page_images/linkedin_icon.png">
+          </a>
+          <a href=# class="botmLogo">
+            <img class="botmLogo" src="/project/music_website/images/about_me_page_images/stumbleupon_logo.png">
+          </a>
+          <a href=# class="botmLogo">
+            <img class="botmLogo" src="/project/music_website/images/about_me_page_images/twitter-icon.png">
+          </a>
+        </div>
+      </footer>
+    </div>             
+  </div>
+  <!-- // for play/pause of audion in flipster-->
+  <script>
+     $('img.audioThumb').click(function(event){
+     $("#audVid").attr("src",this.id)
+     .get(0).play();
+     })
+
+  
+  /*<!-- scrip for gird video play-->*/
+  //jq to play video on image click 
+  $('img.videoThumb').click(function(event){
+  $("#srcVid").attr("src",this.id)
+  .get(0).play();
+   })
+
+  /*jquerry for switching div */
+  $('.galleryButn').click(function()
+    {
+       $('.galleryMusic').removeClass('disp');
+       $('.grid').addClass('disp');
+       $('.musList').addClass('disp');
+       $('.galleryButn').addClass('active');
+       $('.gridButn').removeClass('active');
+       $('.listButn').removeClass('active');
+      })
+      /*View gallery*/
+      $('.gridButn').click(function(){
+      $('.grid').removeClass('disp');
+      $('.galleryMusic').addClass('disp');
+      $('.musList').addClass('disp');
+      $('.galleryButn').removeClass('active');
+      $('.gridButn').addClass('active');
+      $('.listButn').removeClass('active');
+      })
+
+      $('.listButn').click(function(){
+      $('.grid').addClass('disp');
+      $('.galleryMusic').addClass('disp');
+      $('.musList').removeClass('disp');
+      $('.galleryButn').removeClass('active');
+      $('.gridButn').removeClass('active');
+      $('.listButn').addClass('active');
+    })
+
+
+  <!-- //displaying details to <p (grid)> audio in grid view-->
+
+    $(".videoThumb").click(function(){
+    /*$('.videoInfo').removeClass('disp');*/
+    var title = $(this).attr('data-title');
+    var artist = $(this).attr('data-artist');
+    var genre = $(this).attr('data-genre');
+    var length = $(this).attr('data-length');
+    var rating = $(this).attr('data-rating');
+    var index = 1;
+    var img;
+    var str = title +"<br/>"+ artist +"<br/>"+ genre +"<br/>"+ length +"<br/>"+ "Rating:"
+    while (index <= rating) 
+    {
+      str += ' <img src="images/about_me_page_images/star.png">';
+      index++;
+    }
+    $('.trackInfo').html(str);
+    });
+
+  /*<!-- jquerry for grid view displaying track detail in flipster -->*/
+
+  $(".audioThumb").click(function(){
+  var title = $(this).attr('data-title');
+  var artist = $(this).attr('data-artist');
+  var genre = $(this).attr('data-genre');
+  var length = $(this).attr('data-length');
+  var rating = $(this).attr('data-rating');
+  var index = 1;
+  var img;
+  var str = title +"<br/>"+ artist +"<br/>"+ genre +"<br/>"+ length +"<br/>"+ "Rating:"
+  while (index <= rating) 
+  {
+    str += ' <img src="images/about_me_page_images/star.png">';
+    index++;
+  }
+  $('.trackInfoFlipster').html(str);
+  });
+
+  //jq to play video on image click 
+  $('img.videoThumb').click(function(event){
+  $("#srcVid").attr("src",this.id)
+  .get(0).play();
+     });
+
+  // for play audio music in list view
+  $('tr.listAudio').click(function(event) {
+    $("#srcAud").attr("src",this.id)
+    .get(0).play();
+   });
+
+   //jquery to change the status in list view
+  $("#listStatusInfo tr").click(function () {
+    $(this).find('.startStop').html('Stop');
+    $(this).siblings().find('.startStop').html('Play');
+    $(this).addClass('onOffList');
+    $(this).siblings().removeClass('onOffList')
+  });
+  </script>
+  </body>
+</html>
